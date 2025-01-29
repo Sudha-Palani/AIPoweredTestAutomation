@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Upload, FileText, Download } from 'lucide-react';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+// import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
 
 const TestCaseGenerator = () => {
   const [file, setFile] = useState(null);
@@ -108,12 +108,12 @@ const TestCaseGenerator = () => {
       </button>
 
       {/* Error Alert */}
-      {error && (
+      {/* {error && (
         <Alert variant="destructive" className="mb-8">
           <AlertTitle>Error</AlertTitle>
           <AlertDescription>{error}</AlertDescription>
         </Alert>
-      )}
+      )} */}
 
       {/* Test Cases Display */}
       {testCases && (
